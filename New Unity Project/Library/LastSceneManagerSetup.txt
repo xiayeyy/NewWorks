@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Iminect/Demo/DemoAVater/ImiAvater.unity
+  isLoaded: 1
+  isActive: 1

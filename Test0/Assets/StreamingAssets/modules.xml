@@ -1,0 +1,5 @@
+<Modules>
+    <Module path="libXnDeviceIminect.so" />
+    <Module path="libImiSkeletonTracker.so" configDir="" />
+    <Module path="libImiHandGestureTracker.so" configDir="" /> 
+</Modules>

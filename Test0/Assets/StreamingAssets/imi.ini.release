@@ -1,0 +1,11 @@
+[Common]
+;USB or Dummy
+Driver=USB
+[Stream]
+FrameCount=2
+[Properties]
+DepthResolution=0
+[LogMode]
+Level=1
+Console=0
+File=0
