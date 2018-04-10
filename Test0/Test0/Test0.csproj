@@ -101,7 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
-    <Compile Include="Assets\HaloMove.cs" />
+    <Compile Include="Assets\DotwwenTest.cs" />
     <Compile Include="Assets\Iminect\Demo\DemoAVater\ImiDollController.cs" />
     <Compile Include="Assets\Iminect\Demo\DemoAVater\ImiManagerInstance.cs" />
     <Compile Include="Assets\Iminect\Demo\DemoExplorer\ImiExplorer.cs" />

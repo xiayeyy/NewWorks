@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class HaloMove : MonoBehaviour
+public class DotwwenTest : MonoBehaviour
 {
     public Text t1;
     public Transform box1;
@@ -33,7 +33,8 @@ public class HaloMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             //dazhiji();
-            dtqueuq();
+            //dtqueuq();
+            dotweenProgress();
         }
     }
 
@@ -96,6 +97,21 @@ public class HaloMove : MonoBehaviour
 
         dtqueue.OnComplete(() => {   Debug.Log("队列完成！");   });  //lambda 表达式
     }
-    public void asdasd()
-    { }
+    //Dotween Path
+    //Path Type 直线 曲线
+    //Close Path ☑ 勾选闭合路径
+    //Relative ☑ 勾选路径跟随
+    //Orinetation 选择朝向方向
+
+    public void dotweenProgress()
+    {
+        Sequence s = DOTween.Sequence();
+        //第一段动画  
+        s.Append(box1.DOMove(Vector3.one, 2f));
+        //第二段动画  
+        s.Append(box2.DOScale(Vector3.zero, 2f));
+        s.Pause();
+
+        sl1.onValueChanged.AddListener((value) => { Debug.Log(value); s.Goto(value * s.Duration()); });
+    }
 }
