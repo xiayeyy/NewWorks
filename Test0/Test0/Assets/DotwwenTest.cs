@@ -113,5 +113,8 @@ public class DotwwenTest : MonoBehaviour
         s.Pause();
 
         sl1.onValueChanged.AddListener((value) => { Debug.Log(value); s.Goto(value * s.Duration()); });
+        
     }
+
+
 }
