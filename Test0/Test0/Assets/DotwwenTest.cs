@@ -12,8 +12,10 @@ public class DotwwenTest : MonoBehaviour
     public Image im1;
     public Slider sl1;
 
+
     void Start()
     {
+        dotweentest();
         // StartCoroutine(Halomove1());
         Vector3 vt3 = box1.position;
     }
@@ -21,6 +23,7 @@ public class DotwwenTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    
         if (Input.GetKeyDown(KeyCode.A))
         {
             // dotweentest();
@@ -54,7 +57,10 @@ public class DotwwenTest : MonoBehaviour
     public void dotweentest()
     {
         //transform.DOMoveX(1, 5);
-        transform.DOLocalMoveX(150, 1).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+      
+       Tweener s1= transform.DOLocalMoveX(900, 5).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+        sl1.onValueChanged.AddListener((value) => { s1.Goto(value * s1.Duration()); });
+
     }
 
     public void dazhiji()

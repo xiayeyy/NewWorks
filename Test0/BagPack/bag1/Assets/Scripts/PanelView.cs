@@ -5,15 +5,16 @@ using UnityEngine;
 public class PanelView : MonoBehaviour {
     public Transform[] GridTra;
 
-	void Start () {
-		
-	}
-	
-	void Update () {
-		
-	}
-    public void GetGrid()
-    {
 
+    public Transform  GetGrid()
+    {
+        for (int i = 0; i < GridTra.Length; i++)
+        {
+            if (GridTra[i].childCount == 0)
+            {
+                return GridTra[i];
+            }
+        }
+        return null;
     }
 }
