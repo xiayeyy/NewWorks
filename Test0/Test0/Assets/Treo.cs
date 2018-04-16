@@ -36,7 +36,7 @@ public class Treo : MonoBehaviour
         ParticlesLoad();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
