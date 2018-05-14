@@ -76,7 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DragItemUI.cs" />
+    <Compile Include="Assets\DelegateTest.cs" />
     <Compile Include="Assets\Scripts\BagManger.cs" />
     <Compile Include="Assets\Scripts\InputDetector.cs" />
     <Compile Include="Assets\Scripts\PanelView.cs" />
@@ -85,9 +85,12 @@
     <Compile Include="Assets\Scripts\item\Item.cs" />
     <Compile Include="Assets\Scripts\item\Weapon.cs" />
     <Compile Include="Assets\Scripts\model\ItemModel.cs" />
+    <Compile Include="Assets\Scripts\view\DragItemUI.cs" />
     <Compile Include="Assets\Scripts\view\GridUI.cs" />
     <Compile Include="Assets\Scripts\view\ItemUI.cs" />
     <Compile Include="Assets\Scripts\view\TextUI.cs" />
+    <Compile Include="Assets\weituo.cs" />
+    <Compile Include="Assets\weituo2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
